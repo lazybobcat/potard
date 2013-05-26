@@ -7,11 +7,11 @@ To use potard you simply need to include the js and css file. Note that if you w
 
 You can use potard on an input or any other html tag that may contain a number.
 
-Note : this plugin uses canvas so you need IE8+ (or any other real web browser) to make it work.
+Note : this plugin uses canvas so you need IE9+ (or any other real web browser) to make it work.
 
 
 Usage
-===
+==
 
 	<input type="text" class="potard" data-min="0" data-max="100" value="30">
 	<script type="text/javascript">
@@ -31,7 +31,7 @@ Here, we give some default parameters for each of our knobs (shadow, radius and 
 
 
 Parameters
-===
+==
 
 **min** : Minimal value of the knob. By default it's 0, but you can use this param to have a value in a custom range.
 
