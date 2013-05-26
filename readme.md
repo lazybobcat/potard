@@ -1,7 +1,9 @@
 Potard
 ======
 
-Potard is a jQuery plugin that allow you to add a "knob", a circular input, to your website.
+[![Live demo](http://loicboutter.fr/tests/potard/img/potard.png)](http://loicboutter.fr/tests/potard/)
+
+Potard is a jQuery plugin that allow you to add a "knob", a circular input, to your website. [Live demo available here !](http://loicboutter.fr/tests/potard/)
 
 To use potard you simply need to include the js and css file. Note that if you want to be efficient, you should copy/paste js and css code into your generic js and css files.
 
@@ -45,6 +47,8 @@ Parameters
 **height** : Max height of knob and CSS height given to #potard_wrap. You cannot alter this parameter width data-height (does nothing). *Amelioration are planed for this*
  
 **radius** : Circle radius. If bigger than width or height, it will be "cut".
+
+**offset** : An offset angle, the angle where you want the gauge to start (clockwise, in degrees). Zero is the " 12' " angle, 90 is the " 3' " angle. 
  
 **thickness** : Width/Thikness of the circle.
  
