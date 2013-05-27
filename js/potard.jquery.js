@@ -1,20 +1,3 @@
-/**
- * @param min : Minimal value of the knob
- * @param max : Maximal value of the knob
- * @param color : The color of knob's gauge
- * @param width : Max width of knob and CSS width given to #potard_wrap
- * @param height : Max height of knob and CSS height given to #potard_wrap
- * @param radius : Circle radius
- * @param offset : An offset angle, the angle where you want the gauge to start (clockwise, in degrees). Zero is the " 12' " angle, 90 is the " 3' " angle. 
- * @param thickness : Width/Thikness of the circle
- * @param lineColor : The background/blank circle color.
- * @param shadow : A boolean wether or not you want a shadow
- * @param shadowOffsetX : The horizontal shadow offset
- * @param shadowOffsetY : The vertical shadow offset
- * @param shadowBlur : The shadow blur/diffusion
- * @param shadowColor : The shadow color
- */
-
 jQuery(function($) {
 	jQuery.fn.potard = function(params) {
 		// Merge and initialize parameters
