@@ -1,3 +1,4 @@
+/* Potard is a jQuery plugin by Boutter Loïc - 2013-05-26 */
 jQuery(function($) {
 	jQuery.fn.potard = function(params) {
 		// Merge and initialize parameters
@@ -28,8 +29,6 @@ jQuery(function($) {
 			params.width = params.radius*2;
 			params.height = params.radius*2;
 			$t.addClass('potard_value');
-
-			console.log(params);
 
 			// Compute other variables
 			var val = (($(this).val()) ? $(this).val() : (($(this).text()) ? $(this).text() : '0'));
