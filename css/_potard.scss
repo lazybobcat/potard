@@ -1,0 +1,23 @@
+/* Potard is a jQuery plugin by Boutter Loïc - 2013-05-26 */
+div.potard_wrap {
+	margin: 20px;
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+
+	.potard_value {
+		color: #000;
+		font-family: Arial, sans-serif;
+		font-weight: normal; font-style: normal;
+		font-size: 60px;
+		text-align: center;
+		vertical-align: middle;
+		border: none; background:none; outline:none;
+		display: inline-block;
+	}
+
+	canvas {
+		position: absolute;
+		top:0; left:0; right:0; bottom:0;
+	}
+}
