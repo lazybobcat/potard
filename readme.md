@@ -12,8 +12,7 @@ You can use potard on an input or any other html tag that may contain a number.
 Note : this plugin uses canvas so you need IE9+ (or any other real web browser) to make it work.
 
 
-Usage
-==
+## Usage ##
 
 	<input type="text" class="potard" data-min="0" data-max="100" value="30">
 	<script type="text/javascript">
@@ -32,34 +31,30 @@ Here, we give some default parameters for each of our knobs (shadow, radius and 
 	});
 
 
-Parameters
-==
+## Parameters ##
 
-**min** : Minimal value of the knob. By default it's 0, but you can use this param to have a value in a custom range.
+`min` : Minimal value of the knob. By default it's 0, but you can use this param to have a value in a custom range.
 
-**max** : Maximal value of the knob. By default it's 100.
+`max` : Maximal value of the knob. By default it's 100.
 
-**color** : The color of knob's gauge. By default a light green.
+`color` : The color of knob's gauge. By default a light green.
+ 
+`radius` : Circle radius. If bigger than width or height, it will be "cut".
 
- 
-**width** : Max width of knob and CSS width given to #potard_wrap. You cannot alter this parameter width data-width (does nothing). *Amelioration are planed for this*
- 
-**height** : Max height of knob and CSS height given to #potard_wrap. You cannot alter this parameter width data-height (does nothing). *Amelioration are planed for this*
- 
-**radius** : Circle radius. If bigger than width or height, it will be "cut".
+`lock` : Prevent user from modifying the knob value
 
-**offset** : An offset angle, the angle where you want the gauge to start (clockwise, in degrees). Zero is the " 12' " angle, 90 is the " 3' " angle. 
+`offset` : An offset angle, the angle where you want the gauge to start (clockwise, in degrees). Zero is the " 12' " angle, 90 is the " 3' " angle. 
  
-**thickness** : Width/Thikness of the circle.
+`thickness` : Width/Thikness of the circle.
  
-**lineColor** : The background/blank circle color.
+`lineColor` : The background/blank circle color.
  
-**shadow** : A boolean, wether or not you want a shadow under the gauge.
+`shadow` : A boolean, wether or not you want a shadow under the gauge.
  
-**shadowColor** : The shadow color. By default a tranparent black.
+`shadowColor` : The shadow color. By default a tranparent black.
 
-**shadowOffsetX** : The horizontal shadow offset. You cannot alter this parameter width data-shadowOffsetX (does nothing).
+`shadowOffsetX` : The horizontal shadow offset. You cannot alter this parameter width data-shadowOffsetX (does nothing).
  
-**shadowOffsetY** : The vertical shadow offset. You cannot alter this parameter width data-shadowOffsetY (does nothing).
+`shadowOffsetY` : The vertical shadow offset. You cannot alter this parameter width data-shadowOffsetY (does nothing).
  
-**shadowBlur** : The shadow blur/diffusion. You cannot alter this parameter width data-shadowBlur (does nothing).
+`shadowBlur` : The shadow blur/diffusion. You cannot alter this parameter width data-shadowBlur (does nothing).

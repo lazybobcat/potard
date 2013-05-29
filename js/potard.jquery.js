@@ -16,7 +16,8 @@ jQuery(function($) {
 			shadowOffsetX : 2,
 			shadowOffsetY : 0,
 			shadowBlur : 4,
-			shadowColor : 'rgba(0,0,0,0.3)'
+			shadowColor : 'rgba(0,0,0,0.3)',
+			lock : false
 		}, params);
 
 		// Entry Point
@@ -65,19 +66,21 @@ jQuery(function($) {
 			compute(params, a, $t, ctx, m);
 
 			// Events
-			$div.click(function(event) {
-				event.preventDefault();
-				compute(params, angle(event, $div, params), $t, ctx, m);
-			});
-			$div.mousedown(function(event) {
-				event.preventDefault();
-				$div.bind('mousemove', (function(event) {
+			if(!params.lock) {
+				$div.click(function(event) {
+					event.preventDefault();
 					compute(params, angle(event, $div, params), $t, ctx, m);
-				}));
-			}).mouseup(function(event) {
-				event.preventDefault();
-				$div.unbind('mousemove');
-			});
+				});
+				$div.mousedown(function(event) {
+					event.preventDefault();
+					$div.bind('mousemove', (function(event) {
+						compute(params, angle(event, $div, params), $t, ctx, m);
+					}));
+				}).mouseup(function(event) {
+					event.preventDefault();
+					$div.unbind('mousemove');
+				});
+			}
 		});
 
 		function angle(event, $div, params) {
