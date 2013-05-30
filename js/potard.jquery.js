@@ -1,6 +1,6 @@
 /* Potard is a jQuery plugin by Boutter Loïc - 2013-05-26 */
 jQuery(function($) {
-	jQuery.fn.potard = function(params) {
+	jQuery.fn.potard = function(params) { 
 		// Merge and initialize parameters
 		var defaultParameters = jQuery.extend({
 			min : 0,
@@ -17,7 +17,8 @@ jQuery(function($) {
 			shadowOffsetY : 0,
 			shadowBlur : 4,
 			shadowColor : 'rgba(0,0,0,0.3)',
-			lock : false
+			lock : false,
+			mousecursor: 'pointer'
 		}, params);
 
 		// Entry Point
@@ -37,7 +38,7 @@ jQuery(function($) {
 
 			// Wrap element into a div and init canvas
 			$t.wrap('<div class="potard_wrap" />');
-			$t.parents('.potard_wrap').css({'width': params.width+'px', 'height': params.height+'px'});
+			$t.parents('.potard_wrap').css({'width': params.width+'px', 'height': params.height+'px', 'cursor': params.mousecursor});
 			$t.css({'width': '100%', 'height': '100%', 'text-align': 'center', 'line-height': params.height+'px'});
 			var $div = $t.parent();
 			$circle = $('<canvas height="'+params.height+'px" width="'+params.width+'px"/>');

@@ -43,6 +43,8 @@ Here, we give some default parameters for each of our knobs (shadow, radius and 
 
 `lock` : Prevent user from modifying the knob value
 
+`mousecursor` : Changes the mouse cursor while hovering the knob. You can use CSS cursor property values (pointer, help, none, ...).
+
 `offset` : An offset angle, the angle where you want the gauge to start (clockwise, in degrees). Zero is the " 12' " angle, 90 is the " 3' " angle. 
  
 `thickness` : Width/Thikness of the circle.
